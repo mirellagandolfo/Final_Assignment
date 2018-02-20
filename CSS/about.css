@@ -1,0 +1,40 @@
+main.about{
+  display: flex;
+  flex-direction: row;
+  color: #52667C;
+  background: #c0dde2; /* For browsers that do not support gradients */
+  background: linear-gradient(to right, #ffff , #c0dde2); /* Standard syntax (must be last) */
+  padding-bottom: 20px;
+}
+
+.avatar{
+  height:100%;
+  min-width: 0;
+  width: 50%;
+}
+.copy{
+  /* background-color: yellow; */
+  width: 300px;
+  height: 300px;
+  padding-left: 40px;
+  width: 45%;
+  height: auto;
+}
+.copy h1 h2 h3{
+  font-weight: 400;
+}
+
+.grey{
+  color: #5d5e5c;
+}
+.work_history{
+  background-image: url("../IMAGES/");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+h3.about {
+  font-weight: 300;
+  color: black;
+
+}
