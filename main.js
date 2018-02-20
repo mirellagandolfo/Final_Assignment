@@ -13,6 +13,28 @@ $(".readless a").click(function(){
   $(".readmore").show(1000)
 })
 
+
+// Slider for home page
+
+$(document).ready(function(){
+  var movingImage = true;
+  setInterval(function() {
+    if (movingImage) {
+      var $imageToMove = $('.slides-container > img:first-child')
+      $imageToMove.addClass('image-to-move')
+      movingImage = false;
+    } else {
+      var $imageToChangeOrder = $('.slides-container > img:first-child')
+      $imageToChangeOrder.appendTo('.slides-container')
+      $imageToChangeOrder.removeClass('image-to-move')
+      movingImage = true;
+    }
+  }, 3000)
+})
+
+
+
+
 // Corporate Portfolio Modal and Slideshow:
 
 function openModal() {
@@ -94,22 +116,3 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
-
-
-// Slider for home page
-
-$(document).ready(function(){
-  var movingImage = true;
-  setInterval(function() {
-    if (movingImage) {
-      var $imageToMove = $('.slides-container > img:first-child')
-      $imageToMove.addClass('image-to-move')
-      movingImage = false;
-    } else {
-      var $imageToChangeOrder = $('.slides-container > img:first-child')
-      $imageToChangeOrder.appendTo('.slides-container')
-      $imageToChangeOrder.removeClass('image-to-move')
-      movingImage = true;
-    }
-  }, 3000)
-})

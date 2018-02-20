@@ -8,9 +8,8 @@
   margin-bottom: 10px;
 }
 
-/* styles from W3 schools */
 
-/* styles from W3 schools */
+/* Modal in sections below*/
 .row > .column {
 padding: 0 8px;
 }
@@ -70,7 +69,7 @@ min-height:100vh;
 }
 
 
-/* The Close Button */
+/* Modal - The Close Button */
 .close {
 color: white;
 position: absolute;
@@ -121,7 +120,7 @@ background-color: #52667C;
 opacity: .8;
 }
 
-/* Position the "next button" to the right */
+/*Modal  Position the "next button" to the right */
 .next {
 right: 0;
 border-radius: 3px 0 0 3px;

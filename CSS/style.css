@@ -109,6 +109,7 @@ li a.active_link{
   height: 400px;
   width: 100%;
   overflow: hidden;
+  background-size: cover;
 }
 
 #banner img {
@@ -165,12 +166,7 @@ h3, .main_nav{
   font-size: 1rem;
   color:#52667C;
 }
-/* .main_nav{
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
-  font-size: 1.3rem;
-  color:#52667C;
-} */
+
 h4,{
   font-family: 'Open Sans', sans-serif;
   font-weight: 600;
