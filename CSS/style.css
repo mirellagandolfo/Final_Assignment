@@ -95,46 +95,29 @@ li a.active_link{
   color: #becbd3;
   font-weight: 600;
 }
-#banner{
-  background-image: url('../IMAGES/Slider_1280x400px_MST.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 400px;
 
-  /* these are classes for image slide for home page!!! */
+.slides-container {
+  width: 500%;
+  display: flex;
 }
-.ngs{
-  background-image: url('../IMAGES/Slider_1280x400px_NGS.jpg');
+
+#banner{
+  /* background-image: url('../IMAGES/Slider_1280x400px_MST.jpg'); */
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   height: 400px;
-  margin-top:20px;
+  width: 100%;
+  overflow: hidden;
 }
-.oa{
-  background-image: url('../IMAGES/Slider_1280x400px_OA.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  margin-top:20px;
+
+#banner img {
+  width: 20%;
+  transition: margin-left 3s;
 }
-.rbf{
-  background-image: url('../IMAGES/Slider_1280x400px_RBF.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  margin-top:20px;
-}
-.wai{
-  background-image: url('../IMAGES/Slider_1280x400px_WAI.jpg');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  height: 400px;
-  margin-top:20px;
+
+.image-to-move {
+  margin-left: -20%;
 }
 
 main{
@@ -389,13 +372,10 @@ h5 .italic .center{
     font-weight: 400;
     font-size: 1rem;
     color:#52667C;
-    /* background: #c0dde2; /* For browsers that do not support gradients */
-    /* background: linear-gradient(to right, #ffff , #c0dde2); /* Standard syntax (must be last) */
     padding-top: 10px;
     padding-bottom: 10px;
     margin-bottom: 0;
     border-top: 1px solid #c0dde2;
   }
-
 
 }

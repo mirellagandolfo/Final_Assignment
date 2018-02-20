@@ -98,14 +98,18 @@ function showSlides(n) {
 
 // Slider for home page
 
-$('#home').onload(function(){
-
-
-var pics = ['Slider_1280x400px_MST.jpg', 'Slider_1280x400px_NGS.jpg', 'Slider_1280x400px_OA.jpg', 'Slider_1280x400px_RBF.jpg','Slider_1280x400px_WAI.jpg']
-
-    pics.forEach(function(pic){
-          $('#banner').addClass(pic)
-          pics.setInterval()
-
-        })
+$(document).ready(function(){
+  var movingImage = true;
+  setInterval(function() {
+    if (movingImage) {
+      var $imageToMove = $('.slides-container > img:first-child')
+      $imageToMove.addClass('image-to-move')
+      movingImage = false;
+    } else {
+      var $imageToChangeOrder = $('.slides-container > img:first-child')
+      $imageToChangeOrder.appendTo('.slides-container')
+      $imageToChangeOrder.removeClass('image-to-move')
+      movingImage = true;
+    }
+  }, 3000)
 })
