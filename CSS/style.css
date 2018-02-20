@@ -114,6 +114,7 @@ li a.active_link{
 #banner img {
   width: 20%;
   transition: margin-left 3s;
+  background-size: cover;
 }
 
 .image-to-move {
