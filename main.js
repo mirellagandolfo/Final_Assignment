@@ -2,15 +2,15 @@ console.log("hi")
 // About page readmore/readless
 $(".readmore a").click(function(){
   event.preventDefault();
-  $("#show-this-on-click").slideDown(1000)
-  $(".readmore").hide(1000)
-  $(".readless").show(1000)
+  $("#show-this-on-click").slideDown(600)
+  $(".readmore").hide()
+  $(".readless").show()
 })
 $(".readless a").click(function(){
   event.preventDefault();
-  $("#show-this-on-click").slideUp(1000)
-  $(".readless").hide(1000)
-  $(".readmore").show(1000)
+  $("#show-this-on-click").slideUp(600)
+  $(".readless").hide()
+  $(".readmore").show()
 })
 
 
@@ -48,6 +48,7 @@ function closeModal() {
 
 var slideIndex = 1;
 showSlides(slideIndex);
+
 
 // Next/previous controls//
 function plusSlides(n) {

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Portfolio</title>
+    <title>Portfolio_2</title>
     <link rel="stylesheet"  "https://fonts.googleapis.com/css?family=Open+Sans:300,400,400i,600,700" rel="stylesheet">
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="stylesheet" href="CSS/portfolio.css">
@@ -20,253 +20,261 @@
       </nav>
     </header>
 
-    <main>
-      <h3 id="corporate" class="image_gallery">Corporate Design</h3>
+      <main>
+
+        <h3 id="corporate" class="image_gallery">Corporate Design</h3>
+
+        <div class="row">
+
+        <div class="column">
+          <img src="IMAGES/MODAL/CORPORATE/corp_MST_quarterly_600px.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+
+        <div class="column">
+          <img src="IMAGES/MODAL/CORPORATE/corp_ANZ_600px_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+
+        <div class="column">
+          <img src="IMAGES/MODAL/CORPORATE/corp_VMA_600px_3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+
+        <div class="column">
+          <img src="IMAGES/MODAL/CORPORATE/corp_NGS_600px_4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+
+        </div>
+
+        <div class="row">
+
+          <div class="column">
+            <img src="IMAGES/MODAL/CORPORATE/corp_RBF_600px_5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+          </div>
+
+          <div class="column">
+            <img src="IMAGES/MODAL/CORPORATE/corp_forms_600px_6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+          </div>
+
+          <div class="column">
+            <img src="IMAGES/MODAL/CORPORATE/corp_Word_PP_600px_7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+          </div>
+
+          <div class="column">
+            <img src="IMAGES/MODAL/CORPORATE/corp_periodical_600px_8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+          </div>
+
+        </div>
+        <!-- Corp - Modal/Lightbox-->
+
+        <div id="myModal" class="modal">
+
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+
+        <div class="modal-content">
+
+        <!-- <showSlides> -->
+
+        <div class="mySlides">
+          <div class="numbertext">1 / 8&emsp;&emsp;<strong>Corporate Design</strong></div>
+          <img src="IMAGES/MODAL/CORPORATE/corp_MST_quarterly_1000px.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">2 / 8<&emsp;&emsp;<strong>Corporate Design</strong></div>
+          <img src="IMAGES/MODAL/CORPORATE/corp_ANZ_1000px_2.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">3 / 8&emsp;&emsp;<strong>Corporate Design</strong></div>
+          <img src="IMAGES/MODAL/CORPORATE/corp_VMA_1000px_3.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">4 / 8&emsp;&emsp;<strong>Corporate Design</strong></div>
+          <img src="IMAGES/MODAL/CORPORATE/corp_NGS_1000px_4.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">5 / 8&emsp;&emsp;<strong>Corporate Design</strong></div>
+          <img src="IMAGES/MODAL/CORPORATE/corp_RBF_1000px_5.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">6 / 8<&emsp;&emsp;<strong>Corporate Design</strong></div>
+          <img src="IMAGES/MODAL/CORPORATE/corp_forms_1000px_6.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">7 / 8&emsp;&emsp;<strong>Corporate Design</strong></div>
+          <img src="IMAGES/MODAL/CORPORATE/corp_Word_PP_1000px_7.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+          <div class="numbertext">8 / 8&emsp;&emsp;<strong>Corporate Design</strong></div>
+          <img src="IMAGES/MODAL/CORPORATE/corp_periodical_1000px_8.jpg" style="width:100%">
+        </div>
+  <!-- Next/previous controls for Corp-->
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+  <!-- Caption text-->
+        <div class="caption-container">
+          <p id="caption"></p>
+        </div>
+
+      <!-- Thumbnail image controls for Corp-->
+
+        <div class="column">
+          <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_MST_quarterly_1000px.jpg" style="width:100%" onclick="currentSlide(1)" alt= "Template was designed inconjunction with Mercer Style Guidelines. Scope: Design adaptation utilising existing template with
+  new content.">
+        </div>
+
+        <div class="column">
+          <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_ANZ_1000px_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Template was designed inconjunction with ANZ Brand Guidelines. Scope: Design adaptation utilising existing template with
+  new content.">
+        </div>
+
+        <div class="column">
+          <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_VMA_1000px_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Templates were based on Virgin Money Style Guidelines. Scope: Updating documents with new content.">
+        </div>
+
+        <div class="column">
+          <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_NGS_1000px_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Base templates were supplied by client's agency. Scope: Update and/or create new documents (in conjuction with existing templates.)">
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="column">
+          <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_RBF_1000px_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Brand refresh to reflect new look and feel based on other work done in the studio. Scope: Update content. I created the digital version of Member News (inside screen) based on print version that had been designed inhouse.">
+        </div>
+
+        <div class="column">
+          <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_forms_1000px_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Various examples of plan forms. eg. NGS Finacial Fact Find had full interative pdf.">
+        </div>
+
+        <div class="column">
+          <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_Word_PP_1000px_7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Word and Powerpoint templates designed and created for client.">
+        </div>
+
+        <div class="column">
+          <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_periodical_1000px_8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Varioius Mercer documents based on Brand Guidelines. Periodic table is an interactive pdf mapping the perfomance of each inverstment return ">
+        </div>
+        <div class="clearfix"></div>
+
+        <div class ="top"> <a href = "index.html" > &lt;&nbsp;Back to <strong>Home</strong></a></div>
+
+        <div class="right"> <a href= "portfolio.html" >Back to <strong>Portfolio</strong>&nbsp;&gt;</a></div>
+
+        <div class="clearfix"></div>
+        </div>
+
+      </div>
+
+
+  <!--EDU and Govt-->
+
+
+      <h3 id="education">Education and Public Sector</h3>
 
       <div class="row">
 
-      <div class="column">
-        <img src="IMAGES/MODAL/CORPORATE/corp_MST_quarterly_600px.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+        <div class="column">
+          <img src="IMAGES/MODAL/EDU_GOVT/edu_WAI_marketing_ad_600px_1.jpg" style="width:100%" onclick="openModal_2();currentSlide(1)" class="hover-shadow cursor">
+        </div>
+
+        <div class="column">
+          <img src="IMAGES/MODAL/EDU_GOVT/edu_WAI_brochures_600px_2.jpg" style="width:100%" onclick="openModal_2();currentSlide(2)" class="hover-shadow cursor">
+        </div>
+
+        <div class="column">
+          <img src="IMAGES/MODAL/EDU_GOVT/gov_ad_600px_3.jpg" style="width:100%" onclick="openModal_2();currentSlide(3)" class="hover-shadow cursor">
+        </div>
+
+        <div class="column">
+          <img src="IMAGES/MODAL/EDU_GOVT/gov_AR_600px_4.jpg" style="width:100%" onclick="openModal_2();currentSlide(4)" class="hover-shadow cursor">
+        </div>
+
+        </div>
+
+    <!-- Edu - Modal/Lightbox-->
+
+      <div id="myModal_2" class="modal_2">
+       <span class="close cursor_2" onclick="closeModal_2()">&times;</span>
+
+       <div class="modal-content">
+
+         <div class="mySlides_2">
+           <div class="numbertext">1 / 4&emsp;&emsp;<strong>Education and Public Sector Design</strong></div>
+           <img src="IMAGES/MODAL/EDU_GOVT/edu_WAI_marketing_ad_1000px_1.jpg" style="width:100%">
+         </div>
+
+         <div class="mySlides_2">
+           <div class="numbertext">2 / 4&emsp;&emsp;<strong>Education and Public Sector Design</strong></div>
+           <img src="IMAGES/MODAL/EDU_GOVT/edu_WAI_brochures_1000px_2.jpg" style="width:100%">
+         </div>
+
+          <div class="mySlides_2">
+            <div class="numbertext">3 / 4&emsp;&emsp;<strong>Education and Public Sector Design</strong></div>
+            <img src="IMAGES/MODAL/EDU_GOVT/gov_ad_1000px_3.jpg" style="width:100%">
+         </div>
+
+         <div class="mySlides_2">
+           <div class="numbertext">4 / 4&emsp;&emsp;<strong>Education and Public Sector Design</strong>
+          </div>
+          <img src="IMAGES/MODAL/EDU_GOVT/gov_AR_1000px_4.jpg" style="width:100%">
+         </div>
+
+  <!-- Next/previous controls for Edu-->
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+      <!-- Caption text-->
+        <div class="caption-container">
+          <p id="caption_2"></p>
+        </div>
+
+      <!-- Thumbnail image controls for Edu-->
+
+        <div class="column">
+          <img class="demo_2 cursor_2" src="IMAGES/MODAL/EDU_GOVT/edu_WAI_marketing_ad_1000px_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="WAI Ads Blah blah blah blah blah blah">
+        </div>
+
+        <div class="column">
+          <img class="demo_2 cursor_2" src="IMAGES/MODAL/EDU_GOVT/edu_WAI_brochures_1000px_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="WAI Brochures Blah blah blah blah blah blah">
+        </div>
+
+        <div class="column">
+           <img class="demo_2 cursor_2" src="IMAGES/MODAL/EDU_GOVT/gov_ad_1000px_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Govt Ads blah blah blah blah blah">
+         </div>
+
+         <div class="column">
+           <img class="demo_2 cursor_2" src="IMAGES/MODAL/EDU_GOVT/gov_AR_1000px_4.jpg"  style="width:100%" onclick="currentSlide(4)" alt="Govt AR">
+         </div>
+
+        <div class="clearfix"></div>
+
+        <div class ="top">
+          <a href = "index.html" > &lt;&nbsp;Back to <strong>Home</strong></a>
+        </div>
+
+        <div class="right">
+          <a href= "portfolio.html">Back to <strong>Portfolio</strong>&nbsp;&gt;</a>
+        </div>
+
       </div>
 
-      <div class="column">
-        <img src="IMAGES/MODAL/CORPORATE/corp_ANZ_600px_2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
       </div>
 
-      <div class="column">
-        <img src="IMAGES/MODAL/CORPORATE/corp_VMA_600px_3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-      </div>
-
-      <div class="column">
-        <img src="IMAGES/MODAL/CORPORATE/corp_NGS_600px_4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-      </div>
-
-      </div>
-
-    <div class="row">
-
-      <div class="column">
-        <img src="IMAGES/MODAL/CORPORATE/corp_RBF_600px_5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
-      </div>
-
-      <div class="column">
-        <img src="IMAGES/MODAL/CORPORATE/corp_forms_600px_6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
-      </div>
-
-      <div class="column">
-        <img src="IMAGES/MODAL/CORPORATE/corp_Word_PP_600px_7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
-      </div>
-
-      <div class="column">
-        <img src="IMAGES/MODAL/CORPORATE/corp_periodical_600px_8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
-      </div>
-    </div>
-      <!-- Corp - Modal/Lightbox-->
-
-      <div id="myModal" class="modal">
-
-      <span class="close cursor" onclick="closeModal()">&times;</span>
-
-      <div class="modal-content">
-
-      <!-- <showSlides> -->
-
-      <div class="mySlides">
-        <div class="numbertext">1 / 8&emsp;&emsp;<strong>Corporate Design</strong></div>
-        <img src="IMAGES/MODAL/CORPORATE/corp_MST_quarterly_1000px.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">2 / 8<&emsp;&emsp;<strong>Corporate Design</strong></div>
-        <img src="IMAGES/MODAL/CORPORATE/corp_ANZ_1000px_2.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">3 / 8&emsp;&emsp;<strong>Corporate Design</strong></div>
-        <img src="IMAGES/MODAL/CORPORATE/corp_VMA_1000px_3.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">4 / 8&emsp;&emsp;<strong>Corporate Design</strong></div>
-        <img src="IMAGES/MODAL/CORPORATE/corp_NGS_1000px_4.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">5 / 8&emsp;&emsp;<strong>Corporate Design</strong></div>
-        <img src="IMAGES/MODAL/CORPORATE/corp_RBF_1000px_5.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">6 / 8<&emsp;&emsp;<strong>Corporate Design</strong></div>
-        <img src="IMAGES/MODAL/CORPORATE/corp_forms_1000px_6.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">7 / 8&emsp;&emsp;<strong>Corporate Design</strong></div>
-        <img src="IMAGES/MODAL/CORPORATE/corp_Word_PP_1000px_7.jpg" style="width:100%">
-      </div>
-
-      <div class="mySlides">
-        <div class="numbertext">8 / 8&emsp;&emsp;<strong>Corporate Design</strong></div>
-        <img src="IMAGES/MODAL/CORPORATE/corp_periodical_1000px_8.jpg" style="width:100%">
-      </div>
-<!-- Next/previous controls for Corp-->
-
-      <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-      <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-<!-- Caption text-->
-      <div class="caption-container">
-        <p id="caption"></p>
-      </div>
-
-    <!-- Thumbnail image controls for Corp-->
-
-      <div class="column">
-        <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_MST_quarterly_1000px.jpg" style="width:100%" onclick="currentSlide(1)" alt= "Template was designed inconjunction with Mercer Style Guidelines. Scope: Design adaptation utilising existing template with
-new content.">
-      </div>
-
-      <div class="column">
-        <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_ANZ_1000px_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Template was designed inconjunction with ANZ Brand Guidelines. Scope: Design adaptation utilising existing template with
-new content.">
-      </div>
-
-      <div class="column">
-        <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_VMA_1000px_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Templates were based on Virgin Money Style Guidelines. Scope: Updating documents with new content.">
-      </div>
-
-      <div class="column">
-        <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_NGS_1000px_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Base templates were supplied by client's agency. Scope: Update and/or create new documents (in conjuction with existing templates.)">
-      </div>
-
-      <div class="clearfix"></div>
-
-      <div class="column">
-        <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_RBF_1000px_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Brand refresh to reflect new look and feel based on other work done in the studio. Scope: Update content. I created the digital version of Member News (inside screen) based on print version that had been designed inhouse.">
-      </div>
-
-      <div class="column">
-        <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_forms_1000px_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Various examples of plan forms. eg. NGS Finacial Fact Find had full interative pdf.">
-      </div>
-
-      <div class="column">
-        <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_Word_PP_1000px_7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Word and Powerpoint templates designed and created for client.">
-      </div>
-
-      <div class="column">
-        <img class="demo cursor" src="IMAGES/MODAL/CORPORATE/corp_periodical_1000px_8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Varioius Mercer documents based on Brand Guidelines. Periodic table is an interactive pdf mapping the perfomance of each inverstment return ">
-      </div>
-      <div class="clearfix"></div>
-
-      <div class ="top"> <a href = "index.html" > &lt;&nbsp;Back to <strong>Home</strong></a></div>
-
-      <div class="right"> <a href= "portfolio.html" >Back to <strong>Portfolio</strong>&nbsp;&gt;</a></div>
-
-      <div class="clearfix"></div>
-      </div>
-    </div>
-
-
-<!--EDU and Govt-->
-
-
-  <h3 id="education">Education and Public Sector</h3>
-
-  <div class="row">
-
-    <div class="column">
-      <img src="IMAGES/MODAL/EDU_GOVT/edu_WAI_marketing_ad_600px_1.jpg" style="width:100%" onclick="openModal_2();currentSlide(1)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-      <img src="IMAGES/MODAL/EDU_GOVT/edu_WAI_brochures_600px_2.jpg" style="width:100%" onclick="openModal_2();currentSlide(2)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-      <img src="IMAGES/MODAL/EDU_GOVT/gov_ad_600px_3.jpg" style="width:100%" onclick="openModal_2();currentSlide(3)" class="hover-shadow cursor">
-    </div>
-
-    <div class="column">
-      <img src="IMAGES/MODAL/EDU_GOVT/gov_AR_600px_4.jpg" style="width:100%" onclick="openModal_2();currentSlide(4)" class="hover-shadow cursor">
-    </div>
-
-    </div>
-
-  <!-- Edu - Modal/Lightbox-->
-
-  <div id="myModal_2" class="modal_2">
-   <span class="close cursor_2" onclick="closeModal_2()">&times;</span>
-
-   <div class="modal-content">
-
-     <div class="mySlides_2">
-       <div class="numbertext">1 / 4&emsp;&emsp;<strong>Education and Public Sector Design</strong></div>
-       <img src="IMAGES/MODAL/EDU_GOVT/edu_WAI_marketing_ad_1000px_1.jpg" style="width:100%">
-     </div>
-
-     <div class="mySlides_2">
-       <div class="numbertext">2 / 4&emsp;&emsp;<strong>Education and Public Sector Design</strong></div>
-       <img src="IMAGES/MODAL/EDU_GOVT/edu_WAI_brochures_1000px_2.jpg" style="width:100%">
-     </div>
-
-      <div class="mySlides_2">
-        <div class="numbertext">3 / 4&emsp;&emsp;<strong>Education and Public Sector Design</strong></div>
-        <img src="IMAGES/MODAL/EDU_GOVT/gov_ad_1000px_3.jpg" style="width:100%">
-     </div>
-
-     <div class="mySlides_2">
-       <div class="numbertext">4 / 4&emsp;&emsp;<strong>Education and Public Sector Design</strong></div>
-       <img src="IMAGES/MODAL/EDU_GOVT/gov_AR_1000px_4.jpg" style="width:100%">
-     </div>
-
-<!-- Next/previous controls for Edu-->
-
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-  <!-- Caption text-->
-    <div class="caption-container">
-      <p id="caption_2"></p>
-    </div>
-
-  <!-- Thumbnail image controls for Edu-->
-
-    <div class="column">
-      <img class="demo_2 cursor_2" src="IMAGES/MODAL/EDU_GOVT/edu_WAI_marketing_ad_1000px_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="WAI Ads Blah blah blah blah blah blah">
-    </div>
-
-    <div class="column">
-      <img class="demo_2 cursor_2" src="IMAGES/MODAL/EDU_GOVT/edu_WAI_brochures_1000px_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="WAI Brochures Blah blah blah blah blah blah">
-    </div>
-
-    <div class="column">
-       <img class="demo_2 cursor_2" src="IMAGES/MODAL/EDU_GOVT/gov_ad_1000px_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Govt Ads blah blah blah blah blah">
-     </div>
-
-     <div class="column">
-       <img class="demo_2 cursor_2" src="IMAGES/MODAL/EDU_GOVT/gov_AR_1000px_4.jpg"  style="width:100%" onclick="currentSlide(4)" alt="Govt AR">
-     </div>
-
-    <div class="clearfix"></div>
-
-    <div class ="top">
-      <a href = "index.html" > &lt;&nbsp;Back to <strong>Home</strong></a>
-    </div>
-
-    <div class="right">
-      <a href= "portfolio.html">Back to <strong>Portfolio</strong>&nbsp;&gt;</a>
-    </div>
-
-  </div>
-
-</div>
     </main>
 
     <footer>
       <h6>&copy;2018 Mirella Gandolfo</h6>
     </footer>
+
     <script src="jquery_code.js"></script>
     <script src="main.js"> </script>
+
   </body>
+  
 </html>
